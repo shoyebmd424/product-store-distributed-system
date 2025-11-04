@@ -3,7 +3,7 @@ server:
 
 spring:
   config:
-    import: configServer:http://localhost:8080
+    import: config-server:http://localhost:8080
 
 security:
   basic:

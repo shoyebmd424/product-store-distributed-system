@@ -14,10 +14,10 @@ spring:
       config:
         server:
           git:
-            uri: https://github.com/shoyebmd424/product-store.git
+            uri: https://github.com/shoyebmd424/product-store-distributed-system.git
             clone-on-start: true
             default-label: main
-            searchPaths: congfigserver/src/main/resources
+            searchPaths: configServer/src/main/resources
 
 management:
   tracing:
