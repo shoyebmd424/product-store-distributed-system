@@ -2,8 +2,10 @@ server:
   port: 9090
 
 spring:
+  application:
+    name: api-gateway
   config:
-    import: config-server:http://localhost:8080
+    import: "configserver:http://localhost:8080"
 
 security:
   basic:

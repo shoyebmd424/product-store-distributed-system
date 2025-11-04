@@ -3,4 +3,4 @@ server:
 
 spring:
   config:
-    import: configServer:http://localhost:8080
+    import: configserver:http://localhost:8080
