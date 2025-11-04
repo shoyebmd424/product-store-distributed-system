@@ -1,0 +1,20 @@
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    url:  jdbc:h2:mem:userDb
+    username: shoyeb
+    password: shoyeb
+    driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+

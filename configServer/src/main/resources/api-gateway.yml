@@ -1,0 +1,17 @@
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: auth
+              uri: http://localhost:9091
+              predicates:
+                - Path=/auth/**
+            - id: user
+              uri: http://localhost:9092
+              predicates:
+                - Path=/user/**

@@ -1,0 +1,6 @@
+server:
+  port: 9092
+
+spring:
+  config:
+    import: configServer:http://localhost:8080

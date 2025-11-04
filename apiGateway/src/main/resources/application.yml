@@ -1,0 +1,10 @@
+server:
+  port: 9090
+
+spring:
+  config:
+    import: configServer:http://localhost:8080
+
+security:
+  basic:
+    enabled: false
